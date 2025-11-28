@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги - АвтоСалон</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s;
+        }
+        
+        nav a:hover {
+            opacity: 0.8;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #667eea;
+            margin-bottom: 40px;
+            font-size: 2.5rem;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .service-card {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .service-icon {
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
+        
+        .service-card h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+        
+        .service-card p {
+            color: #666;
+            line-height: 1.8;
+        }
+        
+        .benefits {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-top: 40px;
+        }
+        
+        .benefits h2 {
+            color: #667eea;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .benefits-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .benefit-item {
+            display: flex;
+            align-items: start;
+            gap: 15px;
+        }
+        
+        .benefit-item::before {
+            content: "✓";
+            color: #764ba2;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">🚗 АвтоСалон</div>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Наши услуги</h1>
+        
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">🚗</div>
+                <h3>Продажа автомобилей</h3>
+                <p>Широкий выбор новых и подержанных автомобилей различных марок. Помощь в выборе идеального автомобиля для ваших потребностей.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">💳</div>
+                <h3>Автокредитование</h3>
+                <p>Выгодные условия кредитования с минимальным первоначальным взносом. Быстрое одобрение заявки и гибкие сроки погашения.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🔄</div>
+                <h3>Трейд-ин</h3>
+                <p>Принимаем ваш старый автомобиль в зачёт при покупке нового. Справедливая оценка и выгодные условия обмена.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🛠️</div>
+                <h3>Сервисное обслуживание</h3>
+                <p>Полный спектр услуг по техническому обслуживанию и ремонту автомобилей. Оригинальные запчасти и квалифицированные мастера.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🛡️</div>
+                <h3>Страхование</h3>
+                <p>Помощь в оформлении КАСКО и ОСАГО. Сотрудничество с ведущими страховыми компаниями для получения лучших условий.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">📋</div>
+                <h3>Оформление документов</h3>
+                <p>Полное сопровождение сделки: регистрация в ГИБДД, постановка на учёт, помощь в оформлении всех необходимых документов.</p>
+            </div>
+        </div>
+
+        <div class="benefits">
+            <h2>Преимущества работы с нами</h2>
+            <div class="benefits-list">
+                <div class="benefit-item">
+                    <span>Официальная гарантия на все автомобили</span>
+                </div>
+                <div class="benefit-item">
+                    <span>Проверка истории автомобиля перед продажей</span>
+                </div>
+                <div class="benefit-item">
+                    <span>Бесплатная диагностика при покупке</span>
+                </div>
+                <div class="benefit-item">
+                    <span>Гибкая система скидок и бонусов</span>
+                </div>
+                <div class="benefit-item">
+                    <span>Рассрочка без переплат</span>
+                </div>
+                <div class="benefit-item">
+                    <span>Круглосуточная поддержка клиентов</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 АвтоСалон. Все права защищены.</p>
+    </footer>
+</body>
+</html>
+

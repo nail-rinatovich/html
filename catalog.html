@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог автомобилей - АвтоСалон</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s;
+        }
+        
+        nav a:hover {
+            opacity: 0.8;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #667eea;
+            margin-bottom: 40px;
+            font-size: 2.5rem;
+        }
+        
+        .catalog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .car-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .car-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .car-image {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            color: white;
+        }
+        
+        .car-info {
+            padding: 20px;
+        }
+        
+        .car-info h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+        
+        .car-info p {
+            margin-bottom: 8px;
+            color: #666;
+        }
+        
+        .price {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #764ba2;
+            margin-top: 15px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 10px 25px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            margin-top: 15px;
+            transition: opacity 0.3s;
+        }
+        
+        .btn:hover {
+            opacity: 0.8;
+        }
+        
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">🚗 АвтоСалон</div>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Каталог автомобилей</h1>
+        
+        <div class="catalog-grid">
+            <div class="car-card">
+                <div class="car-image">🚙</div>
+                <div class="car-info">
+                    <h3>Toyota Camry 2023</h3>
+                    <p><strong>Год:</strong> 2023</p>
+                    <p><strong>Пробег:</strong> 15 000 км</p>
+                    <p><strong>Двигатель:</strong> 2.5 л, 181 л.с.</p>
+                    <p><strong>КПП:</strong> Автомат</p>
+                    <div class="price">2 450 000 ₽</div>
+                    <a href="#" class="btn">Подробнее</a>
+                </div>
+            </div>
+
+            <div class="car-card">
+                <div class="car-image">🚗</div>
+                <div class="car-info">
+                    <h3>BMW 3 Series 2022</h3>
+                    <p><strong>Год:</strong> 2022</p>
+                    <p><strong>Пробег:</strong> 25 000 км</p>
+                    <p><strong>Двигатель:</strong> 2.0 л, 184 л.с.</p>
+                    <p><strong>КПП:</strong> Автомат</p>
+                    <div class="price">3 200 000 ₽</div>
+                    <a href="#" class="btn">Подробнее</a>
+                </div>
+            </div>
+
+            <div class="car-card">
+                <div class="car-image">🚕</div>
+                <div class="car-info">
+                    <h3>Mercedes-Benz C-Class 2023</h3>
+                    <p><strong>Год:</strong> 2023</p>
+                    <p><strong>Пробег:</strong> 10 000 км</p>
+                    <p><strong>Двигатель:</strong> 1.5 л, 204 л.с.</p>
+                    <p><strong>КПП:</strong> Автомат</p>
+                    <div class="price">3 850 000 ₽</div>
+                    <a href="#" class="btn">Подробнее</a>
+                </div>
+            </div>
+
+            <div class="car-card">
+                <div class="car-image">🚙</div>
+                <div class="car-info">
+                    <h3>Volkswagen Passat 2022</h3>
+                    <p><strong>Год:</strong> 2022</p>
+                    <p><strong>Пробег:</strong> 30 000 км</p>
+                    <p><strong>Двигатель:</strong> 2.0 л, 190 л.с.</p>
+                    <p><strong>КПП:</strong> Автомат</p>
+                    <div class="price">2 100 000 ₽</div>
+                    <a href="#" class="btn">Подробнее</a>
+                </div>
+            </div>
+
+            <div class="car-card">
+                <div class="car-image">🚗</div>
+                <div class="car-info">
+                    <h3>Audi A4 2023</h3>
+                    <p><strong>Год:</strong> 2023</p>
+                    <p><strong>Пробег:</strong> 12 000 км</p>
+                    <p><strong>Двигатель:</strong> 2.0 л, 190 л.с.</p>
+                    <p><strong>КПП:</strong> Автомат</p>
+                    <div class="price">3 500 000 ₽</div>
+                    <a href="#" class="btn">Подробнее</a>
+                </div>
+            </div>
+
+            <div class="car-card">
+                <div class="car-image">🚙</div>
+                <div class="car-info">
+                    <h3>Hyundai Sonata 2022</h3>
+                    <p><strong>Год:</strong> 2022</p>
+                    <p><strong>Пробег:</strong> 20 000 км</p>
+                    <p><strong>Двигатель:</strong> 2.5 л, 180 л.с.</p>
+                    <p><strong>КПП:</strong> Автомат</p>
+                    <div class="price">1 950 000 ₽</div>
+                    <a href="#" class="btn">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 АвтоСалон. Все права защищены.</p>
+    </footer>
+</body>
+</html>
+
